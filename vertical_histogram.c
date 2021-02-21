@@ -38,10 +38,10 @@ main() {
     putchar(maxvalue);
     for ( i = MAXHIST; i > 0; --i) {
         for (j = 1; j < MAXWORD; ++j)
-            if (wl[j] * MAXHIST / maxvalue >= 0)
-                printf(" * ");
+            if (wl[j] * MAXHIST / maxvalue >= i)
+                printf("   * ");
             else 
-                printf("   ");
+                printf("     ");
         putchar('\n');
     }
     for ( i = 1; i < MAXWORD; ++i)
